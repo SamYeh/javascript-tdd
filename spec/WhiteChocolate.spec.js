@@ -1,4 +1,4 @@
-define(["lib/lodash", "src/WhiteChocolate"], function(_, WhiteChocolate) {
+define(["lib/lodash", "WhiteChocolate"], function(_, WhiteChocolate) {
     "use strict";
     describe("WhiteChocolate", function () {
         it("is a function", function () {

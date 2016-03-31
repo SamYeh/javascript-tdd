@@ -1,5 +1,5 @@
 var allTestFiles = [];
-var TEST_REGEXP = /(spec|test)\.js$/i;
+var TEST_REGEXP = /spec\.js$/;
 
 // Get a list of all the test files to include
 Object.keys(window.__karma__.files).forEach(function(file) {
@@ -14,7 +14,13 @@ Object.keys(window.__karma__.files).forEach(function(file) {
 
 requirejs.config({
     // Karma serves files under /base, which is the basePath from your config file
-    baseUrl: '/base',
+    baseUrl: '/base/src',
+
+    // Other directories, relative to baseUrl, in which RequireJS should look for modules.
+    paths: {
+        'lib': '../lib',
+        'spec': '../spec'
+    },
 
     // dynamically load all test files
     deps: allTestFiles,

@@ -23,7 +23,7 @@ the environment variable `PATH` should have been configured for them.
      * `jasmine-core`
      * `karma`
      * `karma-jasmine`
-     * `karma-phantomjs`
+     * `karma-phantomjs-launcher`
      * `karma-requirejs`
      * `phantomjs-prebuilt`
      * `requirejs`
