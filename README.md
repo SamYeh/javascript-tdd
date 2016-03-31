@@ -28,7 +28,7 @@ the environment variable `PATH` should have been configured for them.
      * `phantomjs-prebuilt`
      * `requirejs`
 1. Add `./node_modules/.bin` to the environment variable `PATH`.
-1. Enter `karma start` at the command line. You should output similar to the following:
+1. Enter `karma start` at the command line. You should see output similar to the following:
 ```
 30 03 2016 17:11:20.925:INFO [karma]: Karma v0.13.22 server started at http://localhost:9876/
 30 03 2016 17:11:20.935:INFO [launcher]: Starting browser PhantomJS
