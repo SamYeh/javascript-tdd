@@ -1,0 +1,3 @@
+function min() {
+    "use strict";
+}

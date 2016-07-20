@@ -11,20 +11,3 @@ Object.keys(window.__karma__.files).forEach(function(file) {
         allTestFiles.push(normalizedTestModule);
     }
 });
-
-requirejs.config({
-    // Karma serves files under /base, which is the basePath from your config file
-    baseUrl: '/base/src',
-
-    // Other directories, relative to baseUrl, in which RequireJS should look for modules.
-    paths: {
-        'lib': '../lib',
-        'spec': '../spec'
-    },
-
-    // dynamically load all test files
-    deps: allTestFiles,
-
-    // we have to kickoff jasmine, as it is asynchronous
-    callback: window.__karma__.start
-});
